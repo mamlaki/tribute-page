@@ -1,0 +1,132 @@
+:root {
+    --norwegian-red: #AC2431;
+    --american-blue: #3C3B6E;
+    --dark-gray: #121212;
+    --light-gray: #282828;
+    --lighter-gray: #3A3B3C;
+}
+  
+html {
+    font-size: 62.5%;
+}
+  
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background-color: var(--dark-gray);
+}
+  
+.wrapper {
+    color: white;
+    background-color: var(--light-gray);
+    border-radius: 0.9rem;
+}
+  
+h1 {
+    background-color: var(--norwegian-red);
+    border-radius: 0.9rem 0.9rem 0 0;
+    text-align: left;
+}
+  
+.introductory-details span {
+    font-style: italic;
+}
+  
+.color-emphasis {
+    border-bottom: 3px solid var(--american-blue);
+}
+  
+figcaption {
+    margin: 2rem 0;
+    font-size: 1.4rem;
+}
+  
+img {
+    display: block;
+    max-width: 100%;
+}
+  
+article {
+    background-color: var(--lighter-gray);
+    padding: 1rem;
+}
+  
+h2 {
+    background-color: var(--american-blue);
+    margin: -1rem;
+}
+  
+.introductory-details > *,
+  article > * {
+    padding: 1rem;
+}
+  
+article ul {
+    list-style: none;
+    padding: 0;
+    margin: 4rem 0;
+}
+  
+article ul li {
+    margin-bottom: 2rem;
+}
+  
+.introductory-details,
+  article blockquote,
+  article p,
+  article a {
+    text-align: center;
+}
+  
+article a {
+    display: block;
+    margin: 2rem auto;
+    width: 13rem;
+    border-radius: 0.9rem;
+    text-decoration: none;
+    color: white;
+    background-color: #3EAAAA;
+}
+  
+article a:hover {
+    background-color: #44bbbb;
+}
+  
+@media (min-width: 400px) 
+{
+    .wrapper {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+}
+  
+@media (min-width: 800px) 
+{
+    h1, 
+    h2 {
+      text-align: center;
+    }
+  
+    h2 {
+      border-radius: 0.9rem 0.9rem 0 0;
+    }
+  
+    article {
+      max-width: 80%;
+      margin: 0 auto;
+      border-radius: 0.9rem;
+    }
+  
+    article ul {
+      max-width: 80%;
+      margin: 4rem auto;
+    }
+}
+  
+@media (min-width: 1000px) 
+{
+    .wrapper {
+      max-width: 100rem;
+    }
+}
